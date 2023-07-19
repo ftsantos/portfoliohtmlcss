@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="album.html">Fotos de Rafaele</a>
+        </nav>
+    </header>
+    <main class="album">
+        <section>
+            <section class="apresentacao__album">
+                
+            <div id="page1" class="page active">
+                <img class="apresentacao__imagem-album" src="./assets/images/Rafa 4.jpg" alt="Foto da Rafaele Radman">
+            </div>
+            
+            <div id="page2" class="page">                
+                <img class="apresentacao__imagem-album" src="./assets/images/Rafa 10.jpg" alt="Foto da Rafaele Radman">
+            </div>
+            <br/>
+
+            
+            </section>
+            <section class="album__botoes">
+                <button onclick="showPage(1)" class="button-pagina"><i class="fa-sharp fa-solid fa-less-than" style="color: #dfe4ec;"></i></button>
+                <button onclick="showPage(2)" class="button-pagina"><i class="fa-solid fa-greater-than"></i></button>
+            </section>
+        </section>
+        <!--<img class="apresentacao__imagem" src="./assets/images/Rafa 7.jpg" alt="Foto da Rafaele Radman">-->
+    </main>
+    <footer>
+        <div class="rodape">
+          <p>&copy; 2023 FSantos TecH</p>
+          <p>Desenvolvido por <span class="developer">Francisco Santos</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
