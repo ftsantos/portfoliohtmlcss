@@ -9,6 +9,7 @@
     --cor-background_2: #051a31;
     --cor-hover: #272727;
     --cor-background-fonte: #f2f2f2;
+    --cor-botoes: #adafaf46;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -37,7 +38,13 @@ strong{
     display: none;
 }
 .page.active {
-    display: block;
+    display: flex; /* Utiliza o modelo flexbox para centralizar a imagem - era block*/
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 300px; /* Define a altura do div para centralizar verticalmente a imagem */
+    /* Se o div tiver altura definida em pixels, a imagem ficará centralizada verticalmente.
+       Caso contrário, você pode ajustar a altura conforme necessário. */
+       margin-bottom: 1em;
 }
 
 .button-pagina{
@@ -147,8 +154,7 @@ strong{
 }
 
 .album{
-    padding: 5% 30%;
-    margin: 0 auto;
+    margin: 1em, auto, 2em, auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,16 +173,23 @@ strong{
     width: 50%;
     border-radius: 5%;
     box-shadow: 3px 3px 0 3px #2e2b02, 10px 10px 10px #7a7e7e;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .album__botoes{
+    margin-top: 5em;
     padding: 5% 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
+
+.button-pagina{
+    background-color: var(--cor-botoes);;
+}
+  
+
 
 /* Rodapé */
 /*
